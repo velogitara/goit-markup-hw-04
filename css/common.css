@@ -19,6 +19,7 @@ html {
     --white-color: #ffffff;
     --active-color: #2196f3;
     --focus-color: #2196f3;
+    --card-set-gap: 30px;
 }
 
 body {
@@ -49,6 +50,11 @@ p,
 ul {
     margin-top: 0;
     margin-bottom: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .section {
