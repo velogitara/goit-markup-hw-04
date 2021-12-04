@@ -22,7 +22,7 @@
         <title>goit-markup-hw-04</title>
     </head>
     <body>
-        <!-- header section -->
+        <!---------------------- header section ---------------------->
         <header class="section section-header">
             <div class="container header">
                 <nav class="site-nav">
@@ -36,14 +36,18 @@
                         <li class="item"><a href="" class="link">Контакты</a></li>
                     </ul>
 
-                    <ul class="list">
+                    <ul class="list list-address">
                         <li class="item">
-                            <a href="mailto:info@devstudio.com" class="address-section"
+                            <a
+                                href="mailto:info@devstudio.com"
+                                class="address-section address-icon icon-mail"
                                 >info@devstudio.com</a
                             >
                         </li>
                         <li class="item">
-                            <a href="tel:+380961111111" class="address-section"
+                            <a
+                                href="tel:+380961111111"
+                                class="address-section address-icon icon-phone"
                                 >+38 096 111 11 11</a
                             >
                         </li>
@@ -66,28 +70,31 @@
             <section class="section whatdoing-section">
                 <div class="container">
                     <ul class="whatdoing-ul list">
-                        <li>
+                        <li class="item icon-details">
                             <h3>Внимание к деталям</h3>
                             <p>
                                 Идейные соображения, а также начало повседневной работы по
                                 формированию позиции.
                             </p>
                         </li>
-                        <li>
+
+                        <li class="item icon-watch">
                             <h3>Пунктуальность</h3>
                             <p>
                                 Задача организации, в особенности же рамки и место обучения кадров
                                 влечет за собой.
                             </p>
                         </li>
-                        <li>
+
+                        <li class="item icon-diagram">
                             <h3>Планирование</h3>
                             <p>
                                 Равным образом консультация с широким активом в значительной степени
                                 обуславливает.
                             </p>
                         </li>
-                        <li>
+
+                        <li class="item icon-astronaut">
                             <h3>Современные технологии</h3>
                             <p>
                                 Значимость этих проблем настолько очевидна, что реализация плановых
@@ -132,6 +139,20 @@
                             <div class="section-title-description">
                                 <h3>Игорь Демьяненко</h3>
                                 <p>Product Designer</p>
+                                <ul class="section-title-links">
+                                    <li class="social-links-items">
+                                        <a href="#" class="social-links insta"></a>
+                                    </li>
+                                    <li class="social-links-items">
+                                        <a href="#" class="social-links twitter"></a>
+                                    </li>
+                                    <li class="social-links-items">
+                                        <a href="#" class="social-links facebook"></a>
+                                    </li>
+                                    <li class="social-links-items">
+                                        <a href="#" class="social-links linkedin"></a>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
                         <li>
@@ -139,6 +160,20 @@
                             <div class="section-title-description">
                                 <h3>Ольга Репина</h3>
                                 <p>Frontend Developer</p>
+                                <ul class="section-title-links">
+                                    <li class="social-links-items">
+                                        <a href="#" class="social-links insta-grey"></a>
+                                    </li>
+                                    <li class="social-links-items">
+                                        <a href="#" class="social-links twitter"></a>
+                                    </li>
+                                    <li class="social-links-items">
+                                        <a href="#" class="social-links facebook"></a>
+                                    </li>
+                                    <li class="social-links-items">
+                                        <a href="#" class="social-links linkedin"></a>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
                         <li>
@@ -150,6 +185,20 @@
                             <div class="section-title-description">
                                 <h3>Николай Тарасов</h3>
                                 <p>Marketing</p>
+                                <ul class="section-title-links">
+                                    <li class="social-links-items">
+                                        <a href="#" class="social-links insta-grey"></a>
+                                    </li>
+                                    <li class="social-links-items">
+                                        <a href="#" class="social-links twitter"></a>
+                                    </li>
+                                    <li class="social-links-items">
+                                        <a href="#" class="social-links facebook"></a>
+                                    </li>
+                                    <li class="social-links-items">
+                                        <a href="#" class="social-links linkedin"></a>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
                         <li>
@@ -161,32 +210,62 @@
                             <div class="section-title-description">
                                 <h3>Михаил Ермаков</h3>
                                 <p>UI Designer</p>
+                                <ul class="section-title-links">
+                                    <li class="social-links-items">
+                                        <a href="#" class="social-links insta-grey"></a>
+                                    </li>
+                                    <li class="social-links-items">
+                                        <a href="#" class="social-links twitter"></a>
+                                    </li>
+                                    <li class="social-links-items">
+                                        <a href="#" class="social-links facebook"></a>
+                                    </li>
+                                    <li class="social-links-items">
+                                        <a href="#" class="social-links linkedin"></a>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
                     </ul>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container clients">
+                    <h2 class="title">Постоянные клиенты</h2>
                 </div>
             </section>
         </main>
         <!-- footer section -->
         <footer class="footer-section section">
             <div class="container footer-section-container">
-                <a href="#" class="footer-logo"><span>Web</span>Studio</a>
-                <address class="address-link">
-                    <a
-                        href="https://www.google.com.ua/maps/"
-                        target="_blank"
-                        class="link current-address"
-                        >г. Киев, пр-т Леси Украинки, 26</a
-                    >
-                    <a
-                        href="mailto:info@devstudio.com"
-                        class="address-section address-section-opacity"
-                        >info@devstudio.com</a
-                    >
-                    <a href="tel:+380961111111" class="address-section address-section-opacity"
-                        >+38 096 111 11 11</a
-                    >
-                </address>
+                <div>
+                    <a href="#" class="footer-logo"><span>Web</span>Studio</a>
+                    <address class="address-link">
+                        <a
+                            href="https://www.google.com.ua/maps/"
+                            target="_blank"
+                            class="link current-address"
+                            >г. Киев, пр-т Леси Украинки, 26</a
+                        >
+                        <a
+                            href="mailto:info@devstudio.com"
+                            class="address-section address-section-opacity"
+                            >info@devstudio.com</a
+                        >
+                        <a href="tel:+380961111111" class="address-section address-section-opacity"
+                            >+38 096 111 11 11</a
+                        >
+                    </address>
+                </div>
+                <div class="footer-sotial-links">
+                    <h2 class="footer-section-title">Присоединяйтесь</h2>
+                    <ul class="footer-section-list">
+                        <li><a href="#" class="footer-section-links insta"></a></li>
+                        <li><a href="#" class="footer-section-links twitter"></a></li>
+                        <li><a href="#" class="footer-section-links facebook"></a></li>
+                        <li><a href="#" class="footer-section-links linkedin"></a></li>
+                    </ul>
+                </div>
             </div>
         </footer>
     </body>
