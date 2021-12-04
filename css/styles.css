@@ -345,6 +345,8 @@
     background-image: url('../images/p-linkedin-icon.svg');
 }
 
+/*  ============================== Our Clients ========================== */
+
 .clients {
     text-align: center;
 }
@@ -352,6 +354,38 @@
     font-weight: bold;
     font-size: 36px;
     line-height: 1.1666;
+}
+.clients-list {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.clients-links {
+    display: inline-block;
+    height: 92px;
+    width: 170px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.clients-links.icon-first {
+    background-image: url('../images/ya&co-logo.svg');
+}
+.clients-links.icon-second {
+    background-image: url('../images/second-comapny-logo.svg');
+}
+.clients-links.icon-third {
+    background-image: url('../images/third-company-logo.svg');
+}
+.clients-links.icon-fourth {
+    background-image: url('../images/foster-logo-icon.svg');
+}
+.clients-links.icon-fifth {
+    background-image: url('../images/brand-logo-icon.svg');
+}
+.clients-links.icon-sixth {
+    background-image: url('../images/sixth-logo.svg');
 }
 /* ======================footer section starts====================== */
 .footer-section {
@@ -447,6 +481,7 @@
 }
 .footer-section-links {
     display: block;
+    background-color: rgba(255, 255, 255, 0.1);
     /* outline: 1px solid tomato; */
     width: 44px;
     height: 44px;
