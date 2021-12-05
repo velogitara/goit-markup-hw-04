@@ -85,7 +85,7 @@
     margin-left: auto;
 }
 .list .item + .item {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 .list .address-section {
     display: block;
@@ -96,6 +96,15 @@
 .list-address .item {
     display: flex;
     align-items: center;
+}
+
+.address-section.address-icon {
+    display: inline-flex;
+    align-items: center;
+}
+.icon-mail {
+    margin-right: 10px;
+    fill: currentColor;
 }
 /* .list-address .item::before {
     content: '';
@@ -123,7 +132,7 @@
     background-size: contain;
 } */
 
-.list-address .address-section {
+/* .list-address .address-section {
     display: flex;
     align-items: center;
 }
@@ -145,11 +154,7 @@
     background-image: url('../images/icon-phone.svg');
     width: 10px;
     height: 16px;
-}
-
-.list-address .item.icon-phone::before:hover {
-    background-color: var(--active-color);
-}
+} */
 
 /* ============================== Hero-section =============================== */
 
@@ -188,7 +193,7 @@
     border: transparent;
 }
 
-/* Что мы делаем */
+/* ================================ Что мы делаем =========================== */
 .whatdoing-section {
     background-color: var(--white-color);
     padding-top: 94px;
@@ -198,14 +203,26 @@
     flex-direction: row;
 }
 
-.whatdoing-ul .item::before {
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: var(--secondary-bcg-color);
+    width: 270px;
+    height: 120px;
+}
+
+/* .whatdoing-ul .item::before {
     content: '';
     display: block;
     height: 120px;
     background-color: #f5f4fa;
     margin-bottom: 30px;
-}
-.whatdoing-ul .icon-details::before {
+} */
+
+/* .whatdoing-ul .icon-details::before {
     background-image: url('../images/icon-detail.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -227,7 +244,7 @@
     background-image: url('../images/icon-astronaut.svg');
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 
 .whatdoing-ul .item + .item {
     padding-left: 30px;
@@ -319,7 +336,9 @@
 }
 .social-links {
     content: '';
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
     background-color: #ffffff;
@@ -329,7 +348,20 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-.social-links.insta {
+.social-links:hover,
+.social-links:focus {
+    background-color: var(--active-color);
+}
+
+.icon {
+    fill: var(--icon-silent-color);
+}
+
+.social-links:hover .icon,
+.social-links:focus .icon {
+    fill: var(--white-color);
+}
+/* .social-links.insta {
     background-image: url('../images/p-instagram-icon.svg');
 }
 .social-links.insta-grey {
@@ -343,7 +375,7 @@
 }
 .social-links.linkedin {
     background-image: url('../images/p-linkedin-icon.svg');
-}
+} */
 
 /*  ============================== Our Clients ========================== */
 
@@ -354,6 +386,7 @@
     font-weight: bold;
     font-size: 36px;
     line-height: 1.1666;
+    margin-bottom: 50px;
 }
 .clients-list {
     display: flex;
@@ -361,15 +394,28 @@
     justify-content: space-between;
 }
 .clients-links {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 92px;
     width: 170px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    background-repeat: no-repeat;
-    background-position: center;
 }
-.clients-links.icon-first {
+
+.clients-links-svg {
+    fill: var(--icon-silent-color);
+}
+.clients-links:hover,
+.clients-links:focus {
+    border-color: var(--active-color);
+}
+.clients-links:hover .clients-links-svg,
+.clients-links:focus .clients-links-svg {
+    fill: var(--active-color);
+}
+
+/* .clients-links.icon-first {
     background-image: url('../images/ya&co-logo.svg');
 }
 .clients-links.icon-second {
@@ -386,7 +432,7 @@
 }
 .clients-links.icon-sixth {
     background-image: url('../images/sixth-logo.svg');
-}
+} */
 /* ======================footer section starts====================== */
 .footer-section {
     background-color: var(--footer-bcg-color);
@@ -480,14 +526,14 @@
     align-content: center;
 }
 .footer-section-links {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
     /* outline: 1px solid tomato; */
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .footer-section-list li:nth-child(n + 2) {
@@ -498,7 +544,11 @@
 .footer-section-links:focus {
     background-color: var(--active-color);
 }
-.footer-section-links.insta {
+.footer-section-links:hover > .icon,
+.footer-section-links:focus > .icon {
+    fill: var(--white-color);
+}
+/* .footer-section-links.insta {
     background-image: url('../images/instagram-footer.svg');
 }
 .footer-section-links.twitter {
@@ -509,7 +559,7 @@
 }
 .footer-section-links.linkedin {
     background-image: url('../images/linkedin-footer.svg');
-}
+} */
 /* ======================footer section ends====================== */
 
 /* ========================= portfolio starts ========================= */
@@ -550,9 +600,14 @@
 .btn-filter:focus {
     color: var(--white-color);
     background-color: var(--active-color);
+    border-style: none;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .btn-filter:focus {
     color: var(--white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*=================== filter-list-section=================== */
@@ -571,9 +626,12 @@
     margin-top: var(--card-set-gap);
     margin-left: var(--card-set-gap);
 }
-/* .list-element * {
-    outline: 1px solid tomato;
-} */
+.list-element:focus,
+.list-element:hover {
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 /* .list-element:nth-child(3n) {
     margin-right: 0;
